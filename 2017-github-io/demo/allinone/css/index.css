@@ -1,0 +1,169 @@
+.row {
+    margin-top: 20px;
+}
+
+.img_shell {
+    border-radius: 5px;
+    width: 180px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+}
+
+#div_swipe_area {
+    width: 1000px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.media {
+    margin: 20px auto;
+    background-color: rgba(248, 248, 248, 0.85);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s ease;
+    border-radius: 0px;
+    padding: 15px;
+}
+
+.media:hover {
+    background-color: #f0f0f0;
+}
+
+.tab1-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.hover1 {
+    padding-top: 50px;
+    border-radius: 5px;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.hover2 {
+    padding-top: 100px;
+    height: 300px;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footer .center-block {
+    color: #fff;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    line-height: 40px;
+    width: 58px;
+    height: 40px;
+    border-radius: 4px;
+    display: none;
+}
+
+#scroll-top:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.jumbotron {
+    background-image: url(../res/img3.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color: #fff
+}
+
+
+#loginfloat {
+    position: fixed;
+    z-index: 9999;
+    display: none;
+}
+
+
+.login_body {
+    background-color: white;
+    border: 1px solid #bfbfbf;
+    max-width: 380px;
+    min-height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.26);
+}
+.login_drag {
+    cursor: default;
+    background-color: #00CCFF;
+    line-height: 25px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.input_box {
+    background-color: transparent;
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b1b1b1;
+    outline: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.input_box:hover {
+    border-bottom-color: #4b4b4b;
+}
+
+.submit_btn {
+    height: 35px;
+    width: 300px;
+    margin: 10px;
+
+}
+
+.middle_line {
+    margin: 0px auto;
+    border-bottom: 1px solid #bfbfbf;
+    width: 100%;
+}
+
+.etc {
+    padding-top: 20px;
+}
+
+.etc_btn {
+    height: 30px;
+    min-width: 150px;
+}

@@ -1,0 +1,138 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" charset="utf-8"/>
+    <title>Canvas</title>
+    <link href="css/clite_green.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Canvas 绘图</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="a_white" href="index.html">Index</a></li>
+            <li><a class="a_white" href="./h5_fileapi.html">FileAPI</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <article>
+            <h2>HTML5's Canvas</h2>
+            <h3>1. 矩形的框与填充</h3>
+            <section>
+                <canvas id="demoCanvas1" width="300" height="150">
+                    <p>请使用支持HTML5的浏览器查看本实例</p>
+                </canvas>
+
+                <!---下面将演示一种绘制矩形的demo--->
+                <script type="text/javascript">
+                    //第一步：获取canvas元素
+                    var canvasDom = document.getElementById("demoCanvas1");
+                    //第二步：获取上下文
+                    var context = canvasDom.getContext('2d');
+                    //第三步：指定绘制线样式、颜色
+                    context.strokeStyle = "red";
+                    //第四步：绘制矩形，只有线。内容是空的
+                    context.strokeRect(10, 10, 190, 100);
+                    //以下演示填充矩形。
+                    context.fillStyle = "blue";
+                    context.fillRect(140, 50, 100, 100);
+                </script>
+
+            </section>
+
+            <h3>2. 绘制线条</h3>
+            <section>
+                <canvas id="demoCanvas2" width="110" height="110">
+                </canvas>
+                <script type="text/javascript">
+                    //通过id获得当前的Canvas对象
+                    var canvasDom = document.getElementById("demoCanvas2");
+                    //通过Canvas Dom对象获取Context的对象
+                    var context = canvasDom.getContext("2d");
+                    context.beginPath(); // 开始路径绘制
+                    context.moveTo(20, 35); // 设置路径起点，坐标为(,)
+                    context.lineTo(100, 35); // 绘制一条到(,)的直线
+                    context.lineTo(30, 90);
+                    context.lineTo(60, 1);
+                    context.lineTo(90, 90);
+                    context.closePath();
+                    context.lineWidth = 2.0; // 设置线宽
+                    context.strokeStyle = "#CC0000"; // 设置线的颜色
+                    context.stroke(); // 进行线的着色，这时整条线才变得可见
+                </script>
+
+            </section>
+
+            <h3>3. 绘制文本</h3>
+            <section>
+                <canvas id="demoCanvas3" width="500" height="150"></canvas>
+                <script type="text/javascript">
+                    //通过id获得当前的Canvas对象
+                    var canvasDom = document.getElementById("demoCanvas3");
+                    //通过Canvas Dom对象获取Context的对象
+                    var context = canvasDom.getContext("2d");
+                    context.moveTo(200, 200);
+                    // 设置字体
+                    context.font = "Bold 50px Arial";
+                    // 设置对齐方式
+                    context.textAlign = "left";
+                    // 设置填充颜色
+                    context.fillStyle = "#005600";
+                    // 设置字体内容，以及在画布上的位置
+                    context.fillText("你好", 10, 50);
+                    // 绘制空心字
+                    context.strokeText("Hello", 10, 100);
+                </script>
+            </section>
+
+            <h3>4. 绘制圆形和椭圆</h3>
+            <section>
+                <canvas id="demoCanvas" width="150" height="150"></canvas>
+                <script type="text/javascript">
+                    //通过id获得当前的Canvas对象
+                    var canvasDom = document.getElementById("demoCanvas");
+                    //通过Canvas Dom对象获取Context的对象
+                    var context = canvasDom.getContext("2d");
+                    context.beginPath();//开始绘制路径
+                    //绘制以 （60,60）为圆心，50为半径长度，从0度到360度（PI是180度），最后一个参数代表顺时针旋转。
+                    context.arc(60, 60, 50, 0, Math.PI * 2, true);
+                    context.lineWidth = 2.0;//线的宽度
+                    context.strokeStyle = "#000";//线的样式
+                    context.stroke();//绘制空心的，当然如果使用fill那就是填充了。
+                </script>
+            </section>
+
+            <h3>5. 绘制图片</h3>
+            <section>
+                <canvas id="demoCanvas5" width="400" height="360"></canvas>
+                <script type="text/javascript">
+                    //通过id获得当前的Canvas对象
+                    var canvasDom = document.getElementById("demoCanvas5");
+                    //通过Canvas Dom对象获取Context的对象
+                    var context = canvasDom.getContext("2d");
+                    var image = new Image();//创建一张图片
+                    image.src = "./a.png";//设置图片的路径
+
+
+                    image.onload = function () {//当图片加载完成后
+                        context.drawImage(image, 10, 10);
+                        /* for (var i = 0; i < 10; i++) {//输出10张照片
+                             //参数：（1）绘制的图片  （2）坐标x，（3）坐标y
+                             context.drawImage(image, 100 + i * 80, 100 + i * 80);
+                         }*/
+                    };
+                </script>
+            </section>
+
+
+        </article>
+
+
+        <footer>
+            <p>Copyright ©2016 w GREEN VERSION</p>
+        </footer>
+    </div>
+</div>
+</body>
+

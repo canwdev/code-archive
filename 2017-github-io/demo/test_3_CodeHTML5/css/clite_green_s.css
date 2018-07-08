@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Consolas", "Noto Sans SC Regular", "微软雅黑 Light", "微软雅黑";
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    height: 50px;
+    width: 100px;
+}
+
+h2, h3 {
+    color: #33691E;
+    margin-bottom: 5px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0px 1px 5px #868686;
+}
+
+header {
+    background-color: #8BC34A;
+    color: snow;
+    padding: 10px 10px;
+}
+
+nav {
+    background-color: #AED581;
+    padding: 10px 10px;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 0px 5px;
+    display: inline;
+}
+
+a:link, a:visited {
+    color: #8BC34A;
+    text-decoration: none;
+}
+
+nav a:link, a:visited {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #8BC34A;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #b4e228;
+}
+
+a:active {
+    background-color: #7A991A;
+}
+
+.center {
+    background-color: #DCEDC8;
+    height: auto;
+}
+
+article {
+    padding: 10px 10px;
+    /*background-color:;*/
+    width: 75%;
+}
+
+article section {
+    margin: 10px 15px;
+}
+
+aside {
+    height: inherit;
+    padding: 10px 15px 10px 10px;
+    float: right;
+    position: relative;
+    width: 19%;
+    /*background-color:;*/
+    /* box-shadow: -1px 1px 1px #c6c6c6; */
+}
+
+footer {
+    color: white;
+    padding: 10px 15px;
+    background-color: #9CCC65;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+

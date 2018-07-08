@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" charset="utf-8"/>
+    <title>New Elements</title>
+    <link rel="stylesheet" href="./css/clite_blue.css">
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <h1>HTML5 新元素</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="a_white" href="index.html">Index</a></li>
+            <li><a class="a_white" href="https://www.shiyanlou.com/courses/43/labs/175/document">参考文档...</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <article>
+            <h3>Number 类型 input 标签</h3>
+            <section>
+                <input autofocus="autofocus" type="number" name="demoNumber" min="1" max="100" step="1"/>
+            </section>
+            <h3>Email 类型 input 标签</h3>
+            <section>
+                <input type="email" name="email" placeholder="E-Mail"/>
+            </section>
+            <h3>url 类型 input 标签</h3>
+            <section>
+                <input type="url" placeholder="请输入网址" name="url"/>
+            </section>
+            <h3>Tel类型的 input 标签</h3>
+            <section>
+                <input type="tel" placeholder="输入电话" name="phone"/>
+            </section>
+            <h3>range 类型的 input 标签</h3>
+            <section>
+                <input type="range" min="0" max="50" step="10" name="rangedemo" value="0"/>
+                <form oninput="output.value=parseInt(range.value)+'%'"/>
+                <input type="range" min="0" max="100" step="5" name="range" value="0"/>
+                <output name="output">Default
+                </output>
+                </form>
+            </section>
+            <h3>新的日期、时间、月份、星期input标签</h3>
+            <section>
+                <input type="date" name="datedemo"/>
+            </section>
+            <h3>颜色选择 input 标签</h3>
+            <section>
+                <input type="color" name="colordemo"/>
+            </section>
+            <h3>input 标签自动完成功能</h3>
+            <section>
+                <input type="text" autocomplete="on" name="demoAutoComplete" list="autoNames"/>
+                <datalist id="autoNames">
+                    <option value="实验楼"></option>
+                    <option value="HTML5"></option>
+                    <option value="input标签"></option>
+                </datalist>
+            </section>
+            <h3>综合实例</h3>
+            <section>
+                <fieldset>
+                    <legend>表单演示</legend>
+                    <form action="" method="POST" id="form1" oninput="output.value=parseInt(range.value)">
+                        <input type="text" required pattern="\d+" name="auto" placeholder="必填项测试"/>
+                        <input type="number" name="demoNumber" min="1" max="100" step="2"/>
+                        <input type="email" placeholder="请输入邮箱" name="mail"/>
+                        <input type="url" name="url" placeholder="输入正确的网址"/>
+
+                        <input type="date" name="date"/>
+                        <input type="time" name="time"/>
+                        <input type="color" name="color"/>
+
+                        <input type="range" min="0" max="50" step="5" name="range" value="0"/>
+                        <output name="output">0</output>
+                        <br/>
+                        <input type="submit" value="提交表单..."/>
+                    </form>
+                </fieldset>
+            </section>
+        </article>
+
+
+        <footer>
+            <p>Copyright ©2016 canwdev</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

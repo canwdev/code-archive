@@ -1,0 +1,86 @@
+@import url(scrollbar.css);
+
+body {
+    background: url(../img/city.jpg);
+}
+
+.container {
+    /*margin-top: 100px;*/
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.ticket {
+    height: 300px;
+    width: 300px;
+
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+
+    overflow: hidden;
+
+    float: left;
+    position: absolute;
+
+    transform: rotate3d(0, 0, 1, 45deg);
+    transform-origin: 20px 20px;
+
+    transition: all 1s;
+    animation: pulse 0.8s ease;
+}
+
+.yellow {
+    border: 10px solid #fdf578;
+    background-color: #fdf578;
+}
+
+.blue {
+    border: 10px solid #c7e6f7;
+    background-color: #c7e6f7;
+}
+
+.green {
+    border: 10px solid #c5f6c0;
+    background-color: #c5f6c0;
+}
+
+.ticket_dot {
+    background-color: #fafafa;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 1) inset;
+
+    transition: all 1s;
+}
+
+.ticket:hover {
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 1);
+    transform: rotate3d(0, 0, 1, 0deg);
+    z-index: 99;
+    height: 400px;
+    width: 400px;
+}
+
+.ticket:hover .ticket_dot {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1) inset;
+}
+
+.text {
+    overflow-y: scroll;
+
+    height: 350px;
+    width: 390px;
+
+    transition: all 1s;
+}
+
+.ticket:hover .text {
+    overflow-y: scroll;
+    height: 350px;
+}
+
+
+

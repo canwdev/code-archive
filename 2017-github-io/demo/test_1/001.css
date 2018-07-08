@@ -1,0 +1,144 @@
+a:link {
+    font-weight: normal;
+    text-decoration: none;
+    color: #002E6A;
+}
+
+a:visited {
+    font-weight: normal;
+    text-decoration: none;
+    color: #69006A;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: underline;
+    color: #006A54;
+}
+
+abbr {
+    border-bottom: none;
+}
+
+body {
+    font: 120% "Microsoft YaHei", georgia, sans-serif;
+    color: #555753;
+    background: #fff url(lab-backgroud.png) no-repeat top left;
+    margin: 20px 20px 20px 20px;
+
+}
+
+p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+h1 {
+    font: bold 2em "FangSong", georgia, sans-serif;
+    margin: 10px 0px 0px 0px;
+    color: #0081FF;
+}
+
+h3 {
+    font: normal 1.4em "FangSong", georgia, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #1F61A0;
+}
+
+.intro {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 200px;
+}
+
+.preamble-title {
+    clear: both;
+    margin: 10px 0px 0px 0px;
+    margin-bottom: 0;
+    color: #1F61A0;
+}
+
+.preamble-text {
+    font: normal 0.9em "FangSong", georgia, sans-serif;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+
+.article {
+    color: #52AAFF;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    right: 200px;
+}
+
+.article-title {
+    margin: 30px 0px 0px 0px;
+}
+
+.article-text {
+    margin: 5px 0px 0px 0px;
+}
+
+.lab-footer {
+    font-size: 0.75em;
+    margin: 20px 0px 0px 0px;
+    position: absolute;
+    bottom: 20px;
+
+    right: 200px;
+}
+
+.sidebar {
+    background-color: #D8F8FF;
+    position: absolute;
+    right: 20px;
+    width: 150px;
+    height: 320px;
+}
+
+.sidebar-links {
+    margin-left: 600px;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+}
+
+.sidebar-links h3 {
+    font: normal 1.1em "FangSong", georgia, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #1F61A0;
+    position: relative;
+    right: 20px;
+}
+
+.links-ul {
+    color: #1F61A0;
+    margin: 0px;
+    position: relative;
+    right: 30px;
+}
+
+.links-sidebar-link {
+    font: normal 0.6em "Console", georgia, sans-serif;
+}
+
+.extra1 {
+    background: transparent url(PCMonitor.jpg) top left no-repeat;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    width: 148px;
+    height: 110px;
+    color: white;
+}
+
+.extra21 {
+    background-color: cyan;
+    position: absolute;
+    right: 20px;
+    width: 148px;
+    height: 500px;
+}

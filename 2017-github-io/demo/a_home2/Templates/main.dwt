@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>模板</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body id="body">
+<div class="nav">
+        <ul>
+            <li><a class="a_white" href="index.html">首页</a></li>
+            <li><a class="a_white" href="daily.html">日志</a></li>
+
+            <li><a class="a_white" href="ticket.html">寄语</a></li>
+            <li><a class="a_white" href="photo.html">照片</a></li>
+            <li><a class="a_white" href="video.html">视频</a></li>
+        </ul>
+</div>
+<div class="container scrollbar1 large-header" id="large-header">
+	<!-- TemplateBeginEditable name="EditRegion3" -->
+    可编辑区域
+    <canvas id="demo-canvas"></canvas>
+    <!-- TemplateEndEditable -->
+    
+</div>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+<script src='js/Rx.min.js'></script>
+<script src='js/rxcss.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>

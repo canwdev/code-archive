@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Test</title>
+
+    <script src="./js/jstest.js"></script>
+    <link rel="stylesheet" href="./css/jstest.css">
+</head>
+<body>
+<div onmouseover="this.innerHTML=' ⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄.'"
+     onmouseout="this.innerHTML='Hello, world!'"
+     onmousedown="mDown(this)" ;
+     onmouseup="mUp(this)" ;
+>
+    <script>
+        document.write("Hello World Text from javaScript ");
+        //alert("Hello, world!");
+    </script>
+</div>
+<button onclick="click_button()">Click!</button>
+<br/>
+<input type="text" name="text" id="id1" onblur="f1()"><br/>
+
+<div id="my_div">
+    <script>
+        var x = student.name;
+        var y = student1.age;
+        document.write(x + y);
+        //student.study();
+        with (student) {
+            var x = name;
+            var y = age;
+        }
+    </script>
+    <p><input type="text" name="text" id="cc"><br/></p>
+    <p>
+        <button onclick="click_cc()">Change Color</button>
+    </p>
+    <input type="button" value="Index" onclick="window.location='index.html'">
+</div>
+<script>
+    document.getElementById("my_div").style.height = "150px";
+    document.getElementById("my_div").style.background = "#00ccff";
+    document.getElementById("id1").value = "Try delete all text !";
+    document.getElementsByTagName("input")[1].value = "Second input box #00CCFF";
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>首页</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+    <!-- InstanceBeginEditable name="head" -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- InstanceEndEditable -->
+</head>
+
+<body id="body">
+<div class="nav">
+    <ul>
+        <li><a class="a_white" href="index.html">首页</a></li>
+        <li><a class="a_white" href="daily.html">日志</a></li>
+
+        <li><a class="a_white" href="ticket.html">寄语</a></li>
+        <li><a class="a_white" href="photo.html">照片</a></li>
+        <li><a class="a_white" href="video.html">视频</a></li>
+    </ul>
+</div>
+<div class="container scrollbar1 large-header" id="large-header">
+    <!-- InstanceBeginEditable name="EditRegion3" -->
+    <!--<div class="border1 block1"></div>-->
+    <div class="border1 center_block" id="banner">
+        <div class="center_img"></div>
+        <div class="circles border2 near_top" onClick="location.href='index.html'">首页</div>
+        <div class="circles border2 near_buttom" onClick="location.href='photo.html'">照片</div>
+        <div class="circles border2 near_leftup" onClick="location.href='video.html'">视频</div>
+        <div class="circles border2 near_rightup" onClick="location.href='daily.html'">日志</div>
+        <div class="circles border2 near_leftdown" onClick="location.href='../'">Back</div>
+        <div class="circles border2 near_rightdown" onClick="location.href='ticket.html'">寄语</div>
+    </div>
+    <canvas id="demo-canvas"></canvas>
+    <!--<div class="border1 block2"></div>-->
+    <!-- InstanceEndEditable -->
+
+</div>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+<script src='js/Rx.min.js'></script>
+<script src='js/rxcss.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+<!-- InstanceEnd -->
+<script>
+    $('#body').on('mousemove', function (e) {
+        var offset = $('#body').offset()
+        var x = e.pageX - offset.left
+        var y = e.pageY - offset.top
+        var centerX = $('#body').outerWidth() / 2
+        var centerY = $('#body').outerHeight() / 2
+        var deltaX = x - centerX
+        var deltaY = y - centerY
+        var percentX = deltaX / centerX
+        var percentY = deltaY / centerY
+        var deg = 25
+        $('#banner').css({
+            transform: 'rotateX(' + deg * -percentY + 'deg)' +
+            ' rotateY(' + deg * percentX + 'deg)'
+        })
+    })
+    $('#body').on('mouseleave', function () {
+        $('#banner').css({
+            transform: ''
+        })
+    })
+</script>
+</html>

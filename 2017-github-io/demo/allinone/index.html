@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.85, user-scalable=no" charset="UTF-8">
+    <title>Demo首页</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <script src="bootstrap-3.3.7-dist/js/jquery-1.12.4.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/holder.min.js"></script>
+</head>
+<body>
+
+<!--header-->
+<div id="top" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html"><img src="res/icon.png" height="50px"></a>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-bar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div id="my-bar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="comment.html">留言板</a></li>
+                <li><a href="learn.html">精品教程</a></li>
+                <li><a href="e-commerce.html">商城</a></li>
+            </ul>
+
+            <div class="nav navbar-nav navbar-right">
+                <li id="btn-login"><a href="javascript:"><span class="glyphicon glyphicon-user"></span>登录</a></li>
+            </div>
+            <form action="" class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="输入你要搜索的内容">
+                    <span class="input-group-btn"><button class="btn btn-default"><span
+                            class="glyphicon glyphicon-search"></span> </button></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--header-over-->
+
+<div class="container">
+
+    <div id="my-carousel" class="carousel slide" data-ride="carousel">
+        <!--图片或内容-->
+        <div class="carousel-inner">
+            <div class="item active"><a href=""><img src="res/img1.jpg" src=""/>
+                <div class="carousel-caption">
+                    <h3>学无止境</h3>
+                    <p>在任何项目中使用传送带，去任何地方。</p>
+                </div>
+            </a>
+            </div>
+            <div class="item"><a href=""><img src="res/img2.jpg" src=""/>
+                <div class="carousel-caption custom1">
+                    <h3>Somewhere I'd Rather Be</h3>
+                    <p>放置在那里的任何可选的 HTML, 它将自动对齐和格式化。</p>
+                </div>
+            </a></div>
+            <div class="item" id="custom-slide"><a href=""><img src="res/img3.jpg" src=""/>
+                <div class="carousel-caption custom1">
+                    <h3>图片新闻幻灯片2</h3>
+                    <p>放置在那里的任何可选的 HTML, 它将自动对齐和格式化。</p>
+                </div>
+            </a></div>
+        </div>
+
+        <!--指示灯-->
+        <ol class="carousel-indicators">
+            <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#my-carousel" data-slide-to="1"></li>
+            <li data-target="#my-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!--左右控制-->
+        <a href="#my-carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#my-carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    <hr/>
+
+    <!--新闻热点-->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="media">
+                <h4>新闻热点 2018-3-6 22:06:39</h4>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <a href="" class="media-object"><img src="res/ad1.jpg" height="90px"/></a>
+                </div>
+                <div class="media-body">
+                    <a href=""><h4 class="media-heading">[DEMO]抢购倒计时[DEMO]</h4></a>
+                    <p>京东VAIO
+                        S13笔记本电脑，i5/8G/256G配置，2017年9月初上市价格为9488元，现在平常售价6988元，现特价至5988元，还可叠加价格下方4000-1000券，实付4988元包邮，下单再返1000元京东E卡，相当于3988元入手，神价格，秒杀直达。</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <a href="" class="media-object"><img src="res/ad1.jpg" height="90px"/></a>
+                </div>
+                <div class="media-body">
+                    <a href=""><h4 class="media-heading">
+                        阿里音乐和网易云音乐宣布达成版权互授合作</h4></a>
+                    <p> 阿里音乐与网易云音乐共同对外宣布，双方达成音乐版权互相转授权的合作。
+
+                        阿里音乐和网易云音乐宣布达成版权互授合作
+
+                        一方面，阿里音乐将滚石、S.M.、BMG等优质音乐版权转授给网易云音乐；同时，网易云音乐将天娱、爱贝克思（avex）、丰华、华研国际等优质音乐版权转授给阿里音乐。</p>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="media-left">
+                    <a href="" class="media-object"><img src="res/ad1.jpg" height="90px"/></a>
+                </div>
+                <div class="media-body">
+                    <a href=""><h4 class="media-heading">谷歌、微软即将宣布量子计算里程碑，但实际应用仍有距离</h4></a>
+                    <p>据《金融时报》北京时间1月29日报道，量子计算的热度即将迎来大幅升温。35年来，这一潜在革命性技术一直是物理学家和计算机科学家的一个梦想。
+
+                        谷歌、微软即将宣布量子计算里程碑，但实际应用仍有距离
+
+                        作为全球两大科技巨头，谷歌和微软预计将在接下来几周内宣布两大科学里程碑，凸显人类在量子计算领域取得的快速进步。</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="" class="media-object"><img src="res/ad1.jpg" height="90px"/></a>
+                </div>
+                <div class="media-body">
+                    <a href=""><h4 class="media-heading">
+                        外媒调查：老用户们不买苹果iPhone X的主要原因</h4></a>
+                    <p>你为什么不买iPhone
+                        X？可能大家给出的原因都和小编一样：因为没钱。但是严肃地说，这个问题的答案对于苹果来说可能十分重要，毕竟消费者的需求是第一位的。而今天外媒就做了这样一个调查，根据用户们给出的答案，不购买iPhone
+                        X的主要原因除了价格昂贵之外，还因为它缺乏引人注目的功能。</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#c1" data-toggle="collapse" data-parent="#accordion">Linux
+                            教程</a>
+                        </h4>
+                    </div>
+                    <div id="c1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            这里是Demo内容。这里是Demo内容。这里是Demo内容。这里是Demo内容。这里是Demo内容。linux is very much!linux is very
+                            much!linux is very much!linux is very much!linux is very much!linux is very much!linux is
+                            very much!linux is very much!linux is very much!linux is very much!linux is very much!linux
+                            is very much!linux is very much!linux is very much!linux is very much!linux is very
+                            much!linux is very much!linux is very much!linux is very much!linux is very much!linux is
+                            very much!linux is very much!linux is very much!linux is very much!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#c2" data-toggle="collapse" data-parent="#accordion">PHP 教程</a>
+                        </h4>
+                    </div>
+                    <div id="c2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            php is very much!php is very much!php is very much!php is very much!php is very much!php is
+                            very much!php is very much!php is very much!php is very much!php is very much!php is very
+                            much!php is very much!php is very much!php is very much!php is very much!php is very
+                            much!php is very much!php is very much!php is very much!php is very much!php is very
+                            much!php is very much!php is very much!php is very much!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a href="#c3" data-toggle="collapse" data-parent="#accordion">Java
+                            教程</a>
+                        </h4>
+                    </div>
+                    <div id="c3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            java is very much!java is very much!java is very much!java is very much!java is very
+                            much!java is very much!java is very much!java is very much!java is very much!java is very
+                            much!java is very much!java is very much!java is very much!java is very much!java is very
+                            much!java is very much!java is very much!java is very much!java is very much!java is very
+                            much!java is very much!java is very much!java is very much!java is very much!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="well">
+                <div class="">
+                    <ul class="nav nav-tabs nav1">
+                        <li class="active"><a href="#">Linux</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Java</a></li>
+                    </ul>
+                </div>
+
+                <div id="nav1-tabs">
+                    <div class="tab1-content">
+                        <p>linux is very much!linux is very much!linux is very much!linux is very much!linux is very
+                            much!linux
+                            is
+                            very much!linux is very much!linux is very much!linux is very much!linux is very much!linux
+                            is very
+                            much!linux is very much!linux is very much!linux is very much!linux is very much!linux is
+                            very
+                            much!linux is very much!linux is very much!linux is very much!linux is very much!linux is
+                            very
+                            much!linux is very much!linux is very much!linux is very much!</p>
+                    </div>
+
+                    <div class="tab1-content">
+                        <p>php is very much!php is very much!php is very much!php is very much!php is very much!php is
+                            very
+                            much!php
+                            is very much!php is very much!php is very much!php is very much!php is very much!php is very
+                            much!php is
+                            very much!php is very much!php is very much!php is very much!php is very much!php is very
+                            much!php
+                            is
+                            very much!php is very much!php is very much!php is very much!php is very much!php is very
+                            much!</p>
+                    </div>
+
+                    <div class="tab1-content">
+                        <p>java is very much!java is very much!java is very much!java is very much!java is very
+                            much!java is
+                            very
+                            much!java is very much!java is very much!java is very much!java is very much!java is very
+                            much!java
+                            is
+                            very much!java is very much!java is very much!java is very much!java is very much!java is
+                            very
+                            much!java
+                            is very much!java is very much!java is very much!java is very much!java is very much!java is
+                            very
+                            much!java is very much!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <hr/>
+
+    <!--学习视频-->
+    <div class="row">
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+        <div class="col-md-3 hover1js">
+            <div class="hover1">
+                <h1>开始学习</h1>
+                <p>Click to view</p>
+            </div>
+            <a href="#" class="thumbnail">
+                <img src="res/les1.png"/>
+            </a>
+        </div>
+    </div>
+
+    <hr/>
+    <!--广告1-->
+    <div class="row">
+        <div id="div_swipe_area">
+            <div class="img_shell">
+                <img class='img_swipe' src="res/swipe1.png">
+            </div>
+            <div class="img_shell">
+                <img class='img_swipe' src="res/swipe2.png">
+            </div>
+            <div class="img_shell">
+                <img class='img_swipe' src="res/swipe3.png">
+            </div>
+            <div class="img_shell">
+                <img class='img_swipe' src="res/swipe4.png">
+            </div>
+            <div class="img_shell">
+                <img class='img_swipe' src="res/swipe1.png">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="center-block">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="">xxxxxx</a></li>
+                    <li><a href="">xxxxxx</a></li>
+                    <li>©2018 canwdev</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="">xxxxxx</a></li>
+                    <li><a href="">xxxxxx</a></li>
+                    <li>版权所有</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="scroll-top">
+    <span class="glyphicon glyphicon-triangle-top"></span>
+</div>
+<div id="loginfloat">
+    <div class="login_body">
+        <div class="login_drag">
+            用户登录
+            <span class="right close" onclick="$('#loginfloat').hide(200); return false;">&times;</span>
+        </div>
+        <form>
+            <div class="username">
+                <input class="input_box" id="username" type="text" name="username" placeholder="用户名"
+                       autocomplete="on" autofocus>
+            </div>
+
+            <div class="password">
+                <input class="input_box" id="password" type="password" name="password" placeholder="密码"
+                       autocomplete="on">
+            </div>
+
+            <div class="submit">
+                <button id="submit_btn" class="submit_btn btn">登录</button>
+            </div>
+        </form>
+
+        <div class="middle_line"></div>
+        <div class="etc">
+            <button id="reg_btn" class="etc_btn btn">创建账号</button>
+
+        </div>
+    </div>
+
+</div>
+<!--footer-over-->
+
+</body>
+<script src="js/index.js"></script>
+<script>
+    $('.img_swipe').hover(
+        function () {
+            $(this).stop(false, false).animate({
+                'margin-left': '-100px'
+            }, 200)
+        }, function () {
+            $(this).stop(false, false).animate({
+                'margin-left': '0px'
+            }, 200)
+        }
+    );
+
+    $('.hover1js').hover(
+        function () {
+            $(this).children('.hover1').stop(false, false).slideDown(500);
+        },
+        function () {
+            $(this).children('.hover1').stop(false, false).slideUp(500);
+        }
+    )
+
+    var list = $('.nav1').children('li');
+    var listContent = $('#nav1-tabs').children('div');
+
+    list.mouseenter(function () {
+        $(this).addClass('active');
+        list.not($(this)).removeClass('active');
+
+        var idx = $(this).index();
+        listContent.eq(idx).stop().show(100);
+        listContent.not(listContent.eq(idx)).stop().hide(100);
+    });
+
+    listContent.eq(0).show();
+
+
+</script>
+</html>

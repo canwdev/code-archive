@@ -1,0 +1,50 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" charset="utf-8"/>
+    <title>Welcome</title>
+    <link href="css/clite_green.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/file.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>File API</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="a_white" href="index.html">Index</a></li>
+            <li><a class="a_white" href="./h5_canvas.html">Canvas</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <article>
+            <h2>HTML5's File API Test</h2>
+            <h3>1. 获取名称</h3>
+            <section>
+                <form action="/home/index" method="POST" novalidate="true">
+                    <input type="file" multiple="multiple" name="fileDemo" id="fileDemo"/><br/><br/>
+                    <input type="button" value="获取文件的名字" id="btnGetFile"/>
+
+                </form>
+            </section>
+            <h3>2. 打开方式(使用jquery)</h3>
+            <section>
+                <input type="button" value="以图像格式打开(url)" id="readAsDataURL" onclick="showDataByURL();"/>
+                <input type="button" value="以二进制字符串打开" id="readAsBinaryString" onclick="showDataByBinaryString();"/>
+                <input type="button" value="以文本方式打开" id="readAsText" onclick="showDataByText();"/>
+            </section>
+            <h3>#. 输出</h3>
+            <section>
+                <div id="result"></div>
+            </section>
+        </article>
+
+        <footer>
+            <p>Copyright ©2016 w MOBILE VERSION</p>
+
+        </footer>
+    </div>
+</div>
+</body>
+

@@ -1,0 +1,60 @@
+@import url(animate.css);
+@import url(sp_navBar.css);
+@import url(scrollbar.css);
+
+body {
+    margin: 0px;
+    background-color: #575757;
+    font-family: "微软雅黑", "Microsoft YaHei", "微软雅黑 Light";
+    overflow-y: hidden;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.nullblank {
+    /*height: 50px;*/
+}
+
+.container {
+    /*max-width: 1000px;*/
+    margin: 50px auto;
+
+    height: 93%;
+    overflow-y: scroll;
+
+}
+
+.content {
+    width: 700px;
+    margin: 20px auto;
+    background-color: rgba(248, 248, 248, 0.85);
+    box-shadow: 0px 1px 5px #b2b2b2;
+
+    border-radius: 5px;
+    padding: 15px;
+
+    animation: fadeInUp 1s ease;
+}
+
+.content:first-child {
+
+}
+
+.content h3 {
+    margin: 0px;
+}
+
+.text {
+    padding: 10px;
+    height: 100px;
+    overflow: hidden;
+    text-indent: 32px;
+    transition: all 1s;
+}
+
+.text:hover {
+    overflow-y: scroll;
+    height: 70%;
+}

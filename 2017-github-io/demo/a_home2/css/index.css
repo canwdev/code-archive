@@ -1,0 +1,164 @@
+
+
+body
+{
+/*  background-color:#808080;*/
+    animation: body_background_change 60s infinite; 
+    overflow-y: hidden;
+    font-family: "微软雅黑 Light","Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+	
+}
+
+.container {
+	overflow-y:hidden;
+}
+
+.border1 {
+    border: 2px solid white;
+}
+
+.border2 {
+    border: 1px solid #00ccff;
+    transition-duration: 0.5s;
+}
+
+.border2:hover {
+    background-color:rgba(255,255,255,0.5);
+    border: 1px solid white;
+    transition-duration: 0.5s;
+    color: white;
+    cursor: pointer;
+	
+	box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.5) inset;
+}
+
+
+.center_block {
+  border: 2px solid #00ccff;
+  height: 300px;
+  width: 300px;
+  position:absolute;
+  top:50%;
+  margin-top:-150px;
+  left:50%;
+  margin-left:-150px;
+  border-radius:50%;
+  box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.5) inset;
+}
+
+.center_img {
+	height: 300px;
+  width: 300px;
+	background:url(../img/chrome.png);
+	background-size:111% 111%;
+    background-position: center;
+    background-repeat: no-repeat;
+  	background-position:center;
+	/*animation: bg_run 20s ease-in-out 0s infinite; */
+	animation: bg_run 0.9s ease-in-out ; 
+}
+
+.center_img:hover {
+	/*animation-play-state:paused; */
+}
+
+.near_top {
+  background-color:White;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  left:50%;
+  margin-left: -50px;
+  top:-150px;
+  border-radius:50%;
+  
+   
+    transition-duration: 1s;
+}
+
+.near_buttom{
+  background-color:White;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  left:50%;
+  margin-left: -50px;
+  top:100%;
+  margin-top:50px;
+  border-radius:50%;
+}
+
+.near_leftup{
+  background-color:White;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  left:-110px;
+  top:-25px;
+  border-radius:50%;
+}
+
+.near_rightup{
+  background-color:White;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  left:50%;
+  margin-left:160px;
+  top:-25px;
+  border-radius:50%;
+}
+
+.near_leftdown{
+  background-color:White;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  left:-110px;
+  top:50%;
+  margin-top:75px;
+  border-radius:50%;
+}
+
+.near_rightdown{
+  background-color:White;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  left:50%;
+  margin-left:160px;
+  top:50%;
+  margin-top:75px;
+  border-radius:50%;
+}
+
+.circles{
+  text-align:center;
+  color:#00ccff;
+  line-height:100px;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 100px rgba(0, 0, 0, 0.5) inset;
+}
+
+@keyframes bg_run{     
+            from{     
+                transform:rotate(360deg);     
+            }     
+            to{     
+                transform:rotate(0deg);     
+            }     
+        }  
+
+@keyframes body_background_change
+{
+    0% {
+        background:#333;
+    }
+    10% {
+        background: #607D8B;
+    }
+    100% {
+        background: #333;
+    }
+}
+

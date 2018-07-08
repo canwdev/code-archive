@@ -1,0 +1,188 @@
+body {
+    margin: 0px;
+    background: #dddddd url(background.png) no-repeat top center;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    cursor: default;
+    /*top: 8%;*/
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    font-family: "微软雅黑 Light", "Microsoft YaHei", "微软雅黑", serif;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.33);
+    border: 1px solid rgba(3, 169, 244, 0.56);
+    border-radius: 5px;
+    background-color: #b2b2b2;
+    /*animation: fadeInUp 1s ease;*/
+    overflow-y: hidden;
+}
+
+.header {
+    background-color: #03A9F4;
+    color: white;
+    /*animation: fadeInDown 1s ease;*/
+    z-index: 99;
+    text-align: center;
+}
+
+.header .banner {
+    line-height: 30px;
+}
+
+.header .banner .right {
+    position: absolute;
+    right: 10px;
+}
+
+.left_label {
+    float: left;
+    position: absolute;
+}
+
+.nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: #03A9F4;
+    /*animation: fadeInDown 1s ease;*/
+    z-index: 98;
+    text-align: center;
+}
+
+.nav ul {
+    margin: 0px;
+    list-style: none;
+}
+
+.nav li {
+    padding: 0 5px;
+    margin: 0;
+    display: inline-block;
+    width: 70px;
+    line-height: 35px;
+    color:#fff;
+}
+
+.active {
+    background-color: #fff;
+    color: #000 !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.nav li:hover {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0px 0px;
+    -webkit-padding-start: 0px;
+}
+
+ul li {
+    margin: 3px;
+}
+
+a:link, a:visited {
+    padding: 2px 10px 2px 10px;
+    color: #03A9F4;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #03A9F4;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+
+a:active {
+    background-color: #1972b8;;
+}
+
+.article {
+    padding: 10px 30px;
+    background-color: #ffffff;
+    min-height: 300px;
+    /*animation: fadeInDown 1s ease;*/
+    z-index: 97;
+}
+
+.article ul {
+    list-style-type: circle;
+    font-family: "微软雅黑 Light", "Microsoft YaHei", "微软雅黑", serif;
+    margin: 5px 10px;
+    padding-left: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.footer {
+    color: white;
+    padding: 5px 30px;
+    background-color: #03A9F4;
+    text-align: right;
+    /*animation: fadeInDown 1s ease;*/
+    z-index: 96;
+}
+
+.footer p {
+    margin: 0px;
+}
+
+/*animate.css*/
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}

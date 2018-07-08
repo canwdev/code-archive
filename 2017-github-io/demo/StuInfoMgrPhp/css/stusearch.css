@@ -1,0 +1,31 @@
+body {
+    font-family: "Consolas", "Noto Sans SC Regular", "微软雅黑 Light", "微软雅黑";
+}
+
+a:link {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+p {
+    color: orangered;
+}
+
+iframe {
+    border: 0px;
+}

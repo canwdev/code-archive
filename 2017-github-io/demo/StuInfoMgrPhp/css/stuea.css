@@ -1,0 +1,58 @@
+body {
+    font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+}
+
+a:link {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+p {
+    color: #4a4a4a;
+}
+
+.mustinput {
+    color: orangered;
+}
+
+.success {
+    color: green;
+}
+
+.failed {
+    color: red;
+}
+
+.normal {
+    color: darkgrey;
+}
+
+.floatright {
+    float: right;
+    font-size: 30px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #c3c3c3;
+}
+
+iframe {
+    border: 0px;
+}

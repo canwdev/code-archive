@@ -1,0 +1,99 @@
+
+body {
+    background-color: white;
+    margin-top: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑", "Microsoft YaHei", "微软雅黑 Light";
+}
+
+.container {
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.header {
+    background-color: #2196f3;
+    height: 70px;
+    color: white;
+}
+
+.header h1 {
+    padding: 10px 10px;
+}
+
+.nav {
+    padding: 1px 5px;
+    background-color: #bbdefb;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav li {
+    margin: 0px 5px;
+    display: inline;
+}
+
+ul {
+    list-style: square;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a:link, a:visited {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+a:active {
+    color: firebrick;
+}
+
+.center {
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+.aside {
+    background-color: #f7f7f7;
+    padding: 0px 20px;
+    float: left;
+    height: 100%;
+}
+
+.article {
+    height: 100%;
+    padding: 10px;
+    padding-left: 180px;
+    background-color: #ffffff;
+
+}
+
+.footer {
+    height: 50px;
+    text-align: right;
+    margin-top: -50;
+    padding: 1px 10px;
+    clear: both;
+    background-color: #90caf9;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+}
+
